@@ -5,12 +5,47 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="addit.css" />
     <title>Document</title>
   </head>
   <body>
     <div id="mainContainer">
       <nav></nav>
       <main id="main">
+        <div id="toDoFormContainer">
+          <div id="exitButtonDiv">
+            <button id="exitButton">X</button>
+          </div>
+          <form id="toDoForm">
+            <div class="inputDivs">
+              <input id="titleInput" type="text" required />
+            </div>
+            <div class="inputDivs">
+              <textarea
+                id="descriptionInput"
+                name="descriptionInput"
+                rows="10"
+                cols="50"
+                required
+              ></textarea>
+            </div>
+            <div class="inputDivs" id="dateAndPriorityInputDiv">
+              <div>
+                <input id="dateInput" type="date" required />
+              </div>
+              <div>
+                <select id="priorityInput" name="priorityInput">
+                  <option value="low">Low</option>
+                  <option value="medium">Medium</option>
+                  <option value="high">High</option>
+                </select>
+              </div>
+            </div>
+            <div class="inputDivs" id="addToDoFormButtonDiv">
+              <button id="addToDoFormButton">Add</button>
+            </div>
+          </form>
+        </div>
         <div id="menu">
           <div id="defaultProjects">
             <div id="inbox" class="projectDivs">

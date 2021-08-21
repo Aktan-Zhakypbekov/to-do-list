@@ -57,18 +57,74 @@ nav {
 footer {
   background-color: rgb(6, 66, 46);
 }
-/*#projectMainContainer {
-  width: 800px;
-  height: 800px;
-  background-color: darkblue;
+#toDoFormContainer {
+  width: 600px;
+  height: 600px;
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 6fr;
+  background-color: yellow;
+  display: none;
 }
-#projectHeader {
-  width: 100%;
-  height: 30px;
-  background-color: darkgreen;
+#exitButtonDiv {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  border: 1px solid red;
 }
-#projectAddButton {
-  width: 100%;
-  height: 30px;
-  background-color: darkmagenta;
-}*/
+#exitButton {
+  margin-right: 15px;
+  width: 9%;
+  height: 60%;
+}
+#toDoForm {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 3fr 1fr 1fr;
+}
+.inputDivs {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid green;
+}
+#titleInput {
+  width: 90%;
+  height: 80%;
+  font-size: 24px;
+}
+#descriptionInput {
+  font-size: 18px;
+}
+#dateAndPriorityInputDiv {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+}
+#dateAndPriorityInputDiv div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#dateInput {
+  width: 90%;
+  height: 80%;
+}
+#priorityInput {
+  width: 90%;
+  height: 80%;
+}
+#addToDoFormButtonDiv {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+#addToDoFormButton {
+  margin-right: 15px;
+  width: 15%;
+  height: 60%;
+}
